@@ -1,0 +1,737 @@
+// This configuration is merged with the default vicinae configuration file, which you can obtain by running the `vicinae config default` command.
+// Every item defined in this file takes precedence over the values defined in the default config or any other imported file.
+//
+// You can make manual edits to this file, however you should keep in mind that this file may be written to by vicinae when a configuration change is made through the GUI.
+// When that happens, any custom comments or formatting will be lost.
+//
+// If you want to maintain a configuration file with your own comments and formatting, you should create a separate file and add it to the 'imports' array.
+//
+// Learn more about configuration at https://docs.vicinae.com/config
+
+{
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "activate_on_single_click": true,
+   "search_files_in_root": false,
+   "global_shortcuts": {
+      "toggle": "alt+SPACE"
+   },
+   "font": {
+      "rendering": "native",
+      "normal": {
+         "family": "Libron",
+         "size": 13
+      }
+   },
+   "theme": {
+      "dark": {
+         "name": "vicinae-dark"
+      }
+   },
+   "telemetry": {
+      "system_info": true
+   },
+   "launcher_window": {
+      "compact_mode": {
+         "enabled": false
+      }
+   },
+   "favorites": [
+      "shortcuts:sct-8e31c3323df0",
+      "clipboard:history"
+   ],
+   "providers": {
+      "@aelew/store.raycast.cobalt": {
+         "preferences": {
+            "downloadDirectory": "~/Downloads",
+            "apiInstanceUrl": "https://cobalt.aelew.dev",
+            "filenameStyle": "classic",
+            "notifyOnDownload": true
+         }
+      },
+      "@asubbotin/store.raycast.shell": {
+         "preferences": {
+            "arguments_terminal": false,
+            "arguments_terminal_type": "Terminal"
+         },
+         "entrypoints": {
+            "index": {
+               "alias": "sh"
+            }
+         }
+      },
+      "@erics118/store.raycast.change-case": {
+         "preferences": {
+            "preserveCase": true,
+            "preservePunctuation": false,
+            "popToRoot": true,
+            "hideHUD": false,
+            "exceptions": "iOS, iPadOS, iPhone, macOS, tvOS, watchOS",
+            "source": "selected",
+            "action": "paste",
+            "prefixCharacters": "",
+            "suffixCharacters": "",
+            "CamelCase": true,
+            "CapitalCase": true,
+            "ConstantCase": true,
+            "DotCase": false,
+            "HeaderCase": false,
+            "LowerCase": true,
+            "LowerFirst": false,
+            "NoCase": true,
+            "KebabCase": false,
+            "KebabUpperCase": false,
+            "PascalCase": false,
+            "PascalSnakeCase": false,
+            "PathCase": true,
+            "RandomCase": true,
+            "SentenceCase": true,
+            "SnakeCase": true,
+            "AlternatingCase": false,
+            "SwapCase": true,
+            "TitleCase": true,
+            "UpperCase": true,
+            "UpperFirst": true
+         }
+      },
+      "@gebeto/store.raycast.translate": {
+         "enabled": true,
+         "preferences": {
+            "langFrom": "auto",
+            "lang1": "en",
+            "lang2": "ru",
+            "autoInput": true,
+            "defaultAction": "copy",
+            "prioritizeCrossLanguage": false
+         },
+         "entrypoints": {
+            "instant-translate-copy": {
+               "enabled": false
+            },
+            "instant-translate-paste": {
+               "enabled": false
+            },
+            "instant-translate-view": {
+               "enabled": false
+            },
+            "quick-translate": {
+               "enabled": false
+            },
+            "quick-translate-view": {
+               "enabled": false
+            },
+            "translate": {
+               "alias": "tr"
+            },
+            "translate-form": {
+               "enabled": false
+            }
+         }
+      },
+      "@leandro.maia/store.raycast.media-converter": {
+         "preferences": {
+            "defaultImageOutputFormat": ".jpg",
+            "defaultJpgQuality": "80",
+            "defaultWebpQuality": "80",
+            "defaultPngVariant": "png-24",
+            "defaultHeicQuality": "80",
+            "defaultTiffCompression": "deflate",
+            "defaultAvifQuality": "80",
+            "defaultVideoOutputFormat": ".mp4",
+            "defaultVideoQualityPreset": "high",
+            "defaultAudioOutputFormat": ".flac",
+            "defaultAudioQualityPreset": "high",
+            "defaultGifFps": "15",
+            "defaultGifWidth": "original",
+            "defaultOutputLocation": "sameAsInput",
+            "defaultStripMetadata": false,
+            "moreConversionSettings": false,
+            "ffmpeg_path": "C:\\Users\\Arch\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.exe"
+         }
+      },
+      "@marcjulian/store.raycast.obsidian": {
+         "preferences": {
+            "configFileName": ".obsidian",
+            "vaultPath": "D:\\Notes"
+         }
+      },
+      "@ridemountainpig/store.raycast.instagram-media-downloader": {
+         "preferences": {
+            "mediaDownloadPath": "C:\\Users\\Arch\\Downloads",
+            "downloadMethod": "browser",
+            "verboseLogging": false
+         },
+         "entrypoints": {
+            "download-instagram-highlight-story": {
+               "enabled": false
+            },
+            "download-instagram-story": {
+               "enabled": false
+            }
+         }
+      },
+      "@thomaslombart/store.raycast.github": {
+         "preferences": {
+            "defaultSearchTerms": "author:@me",
+            "vscodeBuild": "vscode",
+            "repositoryCloneProtocol": "ssh",
+            "isOpenInBrowser": false,
+            "includeTeamReviewRequests": true,
+            "repositoryFilterMode": "all",
+            "baseClonePath": "D:\\Coding",
+            "numberOfResults": "10"
+         }
+      },
+      "@vimtor/store.raycast.video-downloader": {
+         "preferences": {
+            "downloadPath": "~/Downloads",
+            "homebrewPath": "/opt/homebrew/bin/brew",
+            "autoLoadUrlFromClipboard": true,
+            "autoLoadUrlFromSelectedText": false,
+            "enableBrowserExtensionSupport": true,
+            "forceIpv4": false,
+            "cookiesFromBrowser": "firefox",
+            "fastRemux": true,
+            "verboseLogging": false,
+            "strictRedaction": false,
+            "ytdlPath": "C:\\Users\\Arch\\AppData\\Local\\Microsoft\\WinGet\\Links\\yt-dlp.exe",
+            "ffmpegPath": "C:\\Users\\Arch\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.exe",
+            "ffprobePath": "C:\\Users\\Arch\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffprobe.exe "
+         }
+      },
+      "applications": {
+         "entrypoints": {
+            "uwp:65d483df-b37e-4fcf-94de-8b795233db63_1mmjbktjj1mkp!app": {
+               "enabled": false
+            },
+            "uwp:9426micro-starinternation.msicenter_kzh8wxbdkxb8p!app": {
+               "enabled": false
+            },
+            "uwp:9662duongdieuphap.exifglass_dhvarhd5k2r8t!app": {
+               "enabled": false
+            },
+            "uwp:duongdieuphap.exifglass_dhvarhd5k2r8t!exifglass": {
+               "enabled": true
+            },
+            "uwp:microsoft.commandpalette_8wekyb3d8bbwe!app": {
+               "enabled": false
+            },
+            "uwp:microsoft.gethelp_8wekyb3d8bbwe!app": {
+               "enabled": false
+            },
+            "uwp:microsoft.powershell_8wekyb3d8bbwe!app": {
+               "enabled": false
+            },
+            "uwp:microsoft.yourphone_8wekyb3d8bbwe!app": {
+               "enabled": false
+            },
+            "uwp:microsoftwindows.client.cbs_cw5n1h2txyewy!webexperiencehost": {
+               "enabled": false
+            },
+            "uwp:microsoftwindows.client.cbs_cw5n1h2txyewy!windowsbackup": {
+               "enabled": false
+            },
+            "uwp:microsoftwindows.client.coreai_cw5n1h2txyewy!clicktodoapp": {
+               "enabled": false
+            },
+            "uwp:victorlin.everythingcp_yazqh14evg2ve!app": {
+               "enabled": false
+            },
+            "win32:aumid:microsoft.skydrive": {
+               "enabled": false
+            },
+            "win32:aumid:microsoft.windows.shell.rundialog": {
+               "enabled": false
+            },
+            "win32:aumid:telegram.telegramdesktop.7ee0c375726f61bb0bb2b940e4e30269": {
+               "alias": "Forkgram"
+            },
+            "win32:c:\\program files (x86)\\blackmagic design\\davinci control panels\\fairlight studio utility\\fairlight studio utility.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\msi afterburner\\doc\\readme.pdf": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\msi afterburner\\sdk\\doc\\localization reference.pdf": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\msi afterburner\\sdk\\doc\\usf skin format reference.pdf": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\msi afterburner\\sdk\\samples": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\rivatuner statistics server\\doc\\readme.pdf": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\rivatuner statistics server\\sdk\\doc\\localization reference.pdf": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\rivatuner statistics server\\sdk\\doc\\usf skin format reference.pdf": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\rivatuner statistics server\\sdk\\samples": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\windows kits\\10\\app certification kit\\appcertui.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\windows kits\\10\\shortcuts\\desktopappsdocumentation.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\windows kits\\10\\shortcuts\\desktopappssamples.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\windows kits\\10\\shortcuts\\desktopappstoolsdocumentation.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\windows kits\\10\\shortcuts\\uwpappsdocumentation.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\windows kits\\10\\shortcuts\\uwpappssamples.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files (x86)\\windows kits\\10\\shortcuts\\uwpappstoolsdocumentation.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\7-zip\\7-zip.chm": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\adguardvpn\\adguardvpn.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\common files\\microsoft shared\\ink\\tabtip.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\cpuid\\cpu-z msi\\cpuz.ini": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\electrum\\electrum-4.8.2.exe --testnet": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\finalwire\\aida64 extreme\\aida64.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\finalwire\\aida64 extreme\\aida64help.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\gigabyte\\control center\\gcc.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\gigabyte\\control center\\gigabyte control center.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\gigabyte\\control center\\launchgcc.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\gigabyte\\control center\\lib\\gbt_dynamic_lighting_lib_uc\\gbt_dynamic_lighting_lib_uc.dll": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\gigabyte\\control center\\lib\\gbt_mb_update\\gbt_mb_update.dll": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\gigabyte\\control center\\lib\\gbt_rgb_sync_control\\gbt_rgb_sync_control.dll": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\gigabyte\\control center\\lib\\gbt_rgbmotherboard_uc\\gbt_rgbmotherboard_uc.dll": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\git\\git-cmd.exe --cd-to-home": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\git\\releasenotes.html": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\hyper-v\\vmcreate.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\imagemagick-7.1.2-q16-hdri\\index.html": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\internet explorer\\iediagcmd.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\keepassxc\\share\\docs\\keepassxc_gettingstarted.html": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\keepassxc\\share\\docs\\keepassxc_userguide.html": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\librewolf\\librewolf-winupdater.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\ndi\\ndi 6 runtime\\v6\\ndi information.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\ndi\\ndi 6 runtime\\v6\\ndi license agreement.pdf": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\onlyoffice\\desktopeditors\\desktopeditors.exe --new:cell": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\onlyoffice\\desktopeditors\\desktopeditors.exe --new:form": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\onlyoffice\\desktopeditors\\desktopeditors.exe --new:slide": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\onlyoffice\\desktopeditors\\desktopeditors.exe --new:word": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\openrgb\\openrgb.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\openrgb\\openrgb.exe --startminimized": {
+               "enabled": true
+            },
+            "win32:c:\\program files\\thiojoe\\explorer dialog path selector\\explorerdialogpathselector.exe": {
+               "enabled": true
+            },
+            "win32:c:\\program files\\videolan\\vlc\\documentation.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\videolan\\vlc\\news.txt": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\videolan\\vlc\\videolan website.url": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\videolan\\vlc\\vlc.exe --reset-config --reset-plugins-cache vlc://quit": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\videolan\\vlc\\vlc.exe -iskins": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\windows mail\\wab.exe": {
+               "enabled": false
+            },
+            "win32:c:\\program files\\windows mail\\wabmig.exe": {
+               "enabled": false
+            },
+            "win32:c:\\users\\arch\\appdata\\local\\programs\\python\\python314\\doc\\html\\index.html": {
+               "enabled": false
+            },
+            "win32:c:\\users\\arch\\appdata\\local\\programs\\python\\python314\\python.exe": {
+               "enabled": false
+            },
+            "win32:c:\\users\\arch\\appdata\\local\\programs\\python\\python314\\python.exe -m pydoc -b": {
+               "enabled": false
+            },
+            "win32:c:\\users\\arch\\appdata\\local\\programs\\python\\python314\\pythonw.exe \"c:\\users\\arch\\appdata\\local\\programs\\python\\python314\\lib\\idlelib\\idle.pyw\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\explorer.exe \"c:\\program files (x86)\\windows kits\\10\\\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\appverif.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\charmap.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe /d /c \"c:\\program files\\nodejs\\install_tools.bat\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe /k \"c:\\program files (x86)\\microsoft visual studio\\18\\buildtools\\common7\\tools\\vsdevcmd.bat\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe /k \"c:\\program files (x86)\\microsoft visual studio\\18\\buildtools\\vc\\auxiliary\\build\\vcvars32.bat\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe /k \"c:\\program files (x86)\\microsoft visual studio\\18\\buildtools\\vc\\auxiliary\\build\\vcvars64.bat\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe /k \"c:\\program files (x86)\\microsoft visual studio\\18\\buildtools\\vc\\auxiliary\\build\\vcvarsamd64_x86.bat\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe /k \"c:\\program files (x86)\\microsoft visual studio\\18\\buildtools\\vc\\auxiliary\\build\\vcvarsx86_amd64.bat\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\cmd.exe /k \"c:\\program files\\nodejs\\nodevars.bat\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\comexp.msc": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\iscsicpl.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\livecaptions.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\magnify.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\mmc.exe \"%windir%\\system32\\virtmgmt.msc\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\narrator.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\nfsmgmt.msc": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\odbcad32.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\osk.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\perfmon.msc /s": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\printmanagement.msc": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\secpol.msc /s": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\voiceaccess.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\system32\\windowspowershell\\v1.0\\powershell_ise.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\syswow64\\appverif.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\syswow64\\odbcad32.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\syswow64\\windowspowershell\\v1.0\\powershell.exe": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\syswow64\\windowspowershell\\v1.0\\powershell.exe -noe -c \"&{import-module \"\"\"c:\\program files (x86)\\microsoft visual studio\\18\\buildtools\\common7\\tools\\microsoft.visualstudio.devshell.dll\"\"\"; enter-vsdevshell 480e0521}\"": {
+               "enabled": false
+            },
+            "win32:c:\\windows\\syswow64\\windowspowershell\\v1.0\\powershell_ise.exe": {
+               "enabled": false
+            },
+            "win32:https://gitforwindows.org/faq": {
+               "enabled": false
+            },
+            "win32:https://github.com/tyrrrz/lightbulb": {
+               "enabled": false
+            },
+            "win32:https://nodejs.org/": {
+               "enabled": false
+            },
+            "win32:https://nodejs.org/download/release/v26.7.0/docs/api/": {
+               "enabled": false
+            },
+            "win32:https://www.pdfgear.com/": {
+               "enabled": false
+            }
+         }
+      },
+      "browser-extension": {
+         "entrypoints": {
+            "browse-tabs": {
+               "alias": "tabs"
+            },
+            "shortcut-active-tab": {
+               "enabled": false
+            }
+         }
+      },
+      "calculator": {
+         "entrypoints": {
+            "history": {
+               "alias": "calc"
+            }
+         }
+      },
+      "clipboard": {
+         "preferences": {
+            "monitoring": true,
+            "ignorePasswords": false,
+            "preserveTagged": true,
+            "ignoredApps": [],
+            "evictionThreshold": "86400",
+            "eraseOnStartup": false
+         },
+         "entrypoints": {
+            "clear": {
+               "enabled": false
+            },
+            "clear-history": {
+               "enabled": false
+            },
+            "history": {
+               "shortcut": "super+V"
+            }
+         }
+      },
+      "control-panel": {
+         "enabled": false
+      },
+      "core": {
+         "entrypoints": {
+            "reload-scripts": {
+               "enabled": false
+            },
+            "report-bug": {
+               "enabled": false
+            },
+            "search-emojis": {
+               "preferences": {
+                  "defaultAction": "paste",
+                  "skinTone": "light"
+               }
+            },
+            "show-logs": {
+               "enabled": false
+            },
+            "sponsor": {
+               "enabled": false
+            }
+         }
+      },
+      "developer": {
+         "enabled": false
+      },
+      "files": {
+         "preferences": {
+            "searchBackend": "everything",
+            "everythingInstance": ""
+         },
+         "entrypoints": {
+            "search": {
+               "alias": "e"
+            }
+         }
+      },
+      "power": {
+         "entrypoints": {
+            "hibernate": {
+               "enabled": false
+            },
+            "power-off": {
+               "alias": "shutdown"
+            },
+            "reboot": {
+               "alias": "reboot"
+            },
+            "sleep": {
+               "alias": "sleep",
+               "preferences": {
+                  "confirm": false
+               }
+            }
+         }
+      },
+      "theme": {
+         "enabled": false
+      },
+      "windows-settings": {
+         "entrypoints": {
+            "accessibility-audio": {
+               "enabled": false
+            },
+            "accessibility-keyboard": {
+               "enabled": false
+            },
+            "accessibility-mouse": {
+               "enabled": true
+            },
+            "activation": {
+               "enabled": false
+            },
+            "background": {
+               "enabled": false
+            },
+            "bluetooth": {
+               "enabled": false
+            },
+            "captions": {
+               "enabled": false
+            },
+            "captures": {
+               "enabled": false
+            },
+            "clipboard": {
+               "enabled": false
+            },
+            "connected-devices": {
+               "enabled": false
+            },
+            "contrast-themes": {
+               "enabled": false
+            },
+            "developers": {
+               "enabled": false
+            },
+            "diagnostics": {
+               "enabled": false
+            },
+            "dial-up": {
+               "enabled": false
+            },
+            "family-users": {
+               "enabled": false
+            },
+            "game-bar": {
+               "enabled": false
+            },
+            "game-mode": {
+               "enabled": false
+            },
+            "magnifier": {
+               "enabled": false
+            },
+            "narrator": {
+               "enabled": false
+            },
+            "night-light": {
+               "enabled": false
+            },
+            "offline-maps": {
+               "enabled": false
+            },
+            "optional-features": {
+               "enabled": false
+            },
+            "pen": {
+               "enabled": false
+            },
+            "recovery": {
+               "enabled": false
+            },
+            "touch-keyboard": {
+               "enabled": false
+            },
+            "touchpad": {
+               "enabled": false
+            },
+            "troubleshoot": {
+               "enabled": false
+            },
+            "update-history": {
+               "enabled": false
+            },
+            "windows-backup": {
+               "enabled": false
+            },
+            "work-school": {
+               "enabled": false
+            }
+         }
+      },
+      "wm": {
+         "enabled": false,
+         "entrypoints": {
+            "switch-workspaces": {
+               "enabled": true
+            },
+            "toggle-overview": {
+               "enabled": true
+            }
+         }
+      }
+   }
+}
