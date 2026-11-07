@@ -36,8 +36,7 @@
       }
    },
    "favorites": [
-      "shortcuts:sct-8e31c3323df0",
-      "clipboard:history"
+      "shortcuts:sct-8e31c3323df0"
    ],
    "providers": {
       "@aelew/store.raycast.cobalt": {
