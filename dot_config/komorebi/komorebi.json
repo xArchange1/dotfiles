@@ -1,78 +1,110 @@
 {
   "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.41/schema.json",
   "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "default_workspace_padding": 2,
-  "default_container_padding": 2,
-  "border": true,
-  "border-implementation": "Native",
-  "boarder_style": "System",
-  "border_width": 3,
-  "border_offset": 0,
-  "boarder_colors": {
-    "single": "#89b4fa",
-    "stack": "#89b4fa",
-    "floating": "#89b4fa",
-    "monocle": "#89b4fa",
-    "unfocused": "#89b4fa"
-  },
   "mouse_follows_focus": false,
+  "toggle_float_placement": "Center",
+  "resize_delta": 40,
+
+  "default_workspace_padding": 2,
+  "default_container_padding": 0,
+
+  "border": true,
+  "border_implementation": "Windows",
+  "border_style": "System",
+  "border_colours": {
+    "single": "#D4AF37",
+    "stack": "#D4AF37",
+    "monocle": "#D4AF37",
+    "floating": "#D4AF37",
+    "unfocused": "#3A3A3A"
+  },
+
   "transparency": true,
-  "transparency_alpha": 250,
+  "transparency_alpha": 247,
+
   "animation": {
-    "enabled":true,
-    "duration":300,
+    "enabled": true,
+    "duration": 250,
     "fps": 100,
-    "style":{
-      "movement":"EaseOutBack",
-      "transparency":"Linear"
-    } 
+    "style": {
+      "movement": "EaseOutCubic",
+      "transparency": "Linear"
+    }
   },
-  "theme": {
-    "palette": "Catppuccin",
-    "name": "Mocha",
-    "accent": "Mocha"
-  },
+
   "stackbar": {
     "height": 24,
     "mode": "Never",
     "label": "Title",
-    "tabs": {
-      "width": 200,
-      "font_size": 16
-    }
+    "tabs": { "width": 200, "font_size": 16 }
   },
+
+  "ignore_rules": [
+    { "kind": "Exe", "id": "raycast.exe", "matching_strategy": "Equals" },
+    { "kind": "Exe", "id": "(?i)^javaw?\\.exe$", "matching_strategy": "Regex" },
+    { "kind": "Title", "id": "[Pp]icture.in.[Pp]icture", "matching_strategy": "Regex" }
+  ],
+  "floating_applications": [
+    { "kind": "Title", "id": "Auto-Type - KeePassXC", "matching_strategy": "Equals" }
+  ],
+  "layered_applications": [
+    { "kind": "Exe", "id": "claude.exe", "matching_strategy": "Equals" }
+  ],
+  "manage_rules": [
+    { "kind": "Exe", "id": "claude.exe", "matching_strategy": "Equals" },
+    { "kind": "Exe", "id": "KeePassXC.exe", "matching_strategy": "Equals" },
+    { "kind": "Exe", "id": "Throne.exe", "matching_strategy": "Equals" }
+  ],
+
   "monitors": [
     {
       "workspaces": [
         {
-          "name": "I",
+          "name": "1",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            { "kind": "Exe", "id": "(?i)^(zen|helium|librewolf)\\.exe$", "matching_strategy": "Regex" }
+          ]
+        },
+        {
+          "name": "2",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            { "kind": "Exe", "id": "(?i)^(code|vscodium|zed|idea64)\\.exe$", "matching_strategy": "Regex" }
+          ]
+        },
+        {
+          "name": "3",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            { "kind": "Exe", "id": "(?i)^(resolve|affinity.*)\\.exe$", "matching_strategy": "Regex" }
+          ]
+        },
+        {
+          "name": "4",
+          "layout": "Scrolling",
+          "layout_options": { "scrolling": { "columns": 3, "center_focused_column": true } }
+        },
+        {
+          "name": "5",
+          "layout": "VerticalStack",
+          "initial_workspace_rules": [
+            { "kind": "Exe", "id": "(?i)sonora|youtube music|pear|telegram|discord", "matching_strategy": "Regex" }
+          ]
+        },
+        {
+          "name": "6",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            { "kind": "Exe", "id": "(?i)^(obs64|throne|adguard.*|happ|winws)\\.exe$", "matching_strategy": "Regex" }
+          ]
+        },
+        {
+          "name": "7",
           "layout": "BSP"
-        },
-        {
-          "name": "II",
-          "layout": "VerticalStack"
-        },
-        {
-          "name": "III",
-          "layout": "HorizontalStack"
-        },
-        {
-          "name": "IV",
-          "layout": "UltrawideVerticalStack"
-        },
-        {
-          "name": "V",
-          "layout": "Rows"
-        },
-        {
-          "name": "VI",
-          "layout": "Grid"
-        },
-        {
-          "name": "VII",
-          "layout": "RightMainVerticalStack"
         }
       ]
     }
