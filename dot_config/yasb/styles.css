@@ -2265,6 +2265,33 @@
 }
 
 /* Komorebi */
+.komorebi-workspaces .ws-btn {
+    border: none;
+    margin: 0 2px;
+    padding: 0 4px;
+    background-color: transparent;
+}
+/* Collapse empty workspaces, except 1-3 (requires hide_empty_workspaces: false) */
+.komorebi-workspaces .ws-btn.empty {
+    max-width: 0px;
+    padding: 0;
+    margin: 0;
+    color: transparent;
+}
+.komorebi-workspaces .ws-btn.empty.button-1,
+.komorebi-workspaces .ws-btn.empty.button-2,
+.komorebi-workspaces .ws-btn.empty.button-3 {
+    max-width: 100px;
+    padding: 0 4px;
+    margin: 0 2px;
+    color: var(--yasb-surface-alt);
+}
+.komorebi-workspaces .ws-btn.populated {
+    color: var(--yasb-fg);
+}
+.komorebi-workspaces .ws-btn.active {
+    color: var(--yasb-accent);
+}
 .komorebi-control-widget .label {
     font-size: 14px;
     color: #cdd6f4;
