@@ -10,7 +10,7 @@
     "Brightness": 1
   },
   "NightConfiguration": {
-    "Temperature": 1600,
+    "Temperature": 1800,
     "Brightness": 1
   },
   "ConfigurationTransitionDuration": "02:30:00",
@@ -18,10 +18,10 @@
   "ConfigurationSmoothingMaxDuration": "00:00:05",
   "IsManualSunriseSunsetEnabled": true,
   "ManualSunriseTime": "07:30:00",
-  "ManualSunsetTime": "18:00:00",
+  "ManualSunsetTime": "19:00:00",
   "Location": null,
-  "Theme": 2,
-  "Language": 0,
+  "Theme": "Dark",
+  "Language": "System",
   "IsAutoUpdateEnabled": true,
   "IsDefaultToDayConfigurationEnabled": true,
   "IsConfigurationSmoothingEnabled": true,
@@ -30,31 +30,31 @@
   "IsApplicationWhitelistEnabled": false,
   "WhitelistedApplications": null,
   "ToggleHotKey": {
-    "Key": 76,
-    "Modifiers": 9
+    "Key": "Home",
+    "Modifiers": "Alt, Meta"
   },
   "FocusWindowHotKey": {
-    "Key": 0,
-    "Modifiers": 0
+    "Key": "None",
+    "Modifiers": "None"
   },
   "IncreaseTemperatureOffsetHotKey": {
-    "Key": 76,
-    "Modifiers": 10
+    "Key": "Home",
+    "Modifiers": "Control, Meta"
   },
   "DecreaseTemperatureOffsetHotKey": {
-    "Key": 74,
-    "Modifiers": 10
+    "Key": "End",
+    "Modifiers": "Control, Meta"
   },
   "IncreaseBrightnessOffsetHotKey": {
-    "Key": 0,
-    "Modifiers": 0
+    "Key": "None",
+    "Modifiers": "None"
   },
   "DecreaseBrightnessOffsetHotKey": {
-    "Key": 0,
-    "Modifiers": 0
+    "Key": "None",
+    "Modifiers": "None"
   },
   "ResetConfigurationOffsetHotKey": {
-    "Key": 74,
-    "Modifiers": 9
+    "Key": "End",
+    "Modifiers": "Alt, Meta"
   }
 }
