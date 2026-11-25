@@ -3,22 +3,23 @@
         "action": 0,
         "cron_line": "0 30 18 * * ?",
         "name": "Golden",
-        "next_run": 17944974003258438,
+        "next_run": 17956206006367722,
         "run": true,
         "sub_action": "golden"
     },
     {
-        "action": -1,
-        "cron_line": "0 00 1 * * ?",
+        "action": 0,
+        "cron_line": "0 00 0 * * ?",
         "name": "Off",
-        "next_run": 17945208001299146,
-        "run": true
+        "next_run": 17955540003609017,
+        "run": true,
+        "sub_action": "golden"
     },
     {
         "action": 0,
         "cron_line": "0 00 8 * * ?",
         "name": "White",
-        "next_run": 17944596009572376,
+        "next_run": 17955828000760145,
         "run": true,
         "sub_action": "white"
     }

@@ -560,9 +560,6 @@
             },
             "clear-history": {
                "enabled": false
-            },
-            "history": {
-               "shortcut": "super+V"
             }
          }
       },

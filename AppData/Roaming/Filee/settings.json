@@ -3,13 +3,13 @@
   "language": "auto",
   "startWithSystem": true,
   "contextMenuEnabled": false,
-  "checkForUpdates": true,
+  "checkForUpdates": false,
   "closeAction": "Tray",
   "keepHistory": false,
   "historyLimit": 200,
   "showInDock": true,
   "showMenuBarIcon": true,
-  "notifiedUpdateVersion": "2.4.0",
+  "notifiedUpdateVersion": "2.4.1",
   "whatsNewSeenVersion": "2.4.0",
   "notifiedEngineVersions": {
     "pandoc": "3.13"
@@ -115,11 +115,18 @@
   "uiScale": 1,
   "navCollapsed": false,
   "mainWindow": {
-    "x": 954,
-    "y": 2,
-    "width": 955,
-    "height": 1044,
+    "x": -7,
+    "y": 4,
+    "width": 1914,
+    "height": 1046,
     "maximized": false
   },
-  "turnedOffFields": []
+  "turnedOffFields": [
+    "cad",
+    "model3d",
+    "geo",
+    "science",
+    "writing",
+    "legacy"
+  ]
 }
